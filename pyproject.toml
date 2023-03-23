@@ -1,0 +1,21 @@
+[tool.poetry]
+name = "split-formers"
+version = "0.1.0"
+description = "For splitting transformers accross gpus"
+authors = ["Fady Nakhla <fnakhla23@gmail.com>"]
+readme = "README.md"
+packages = [{include = "split_formers"}]
+
+[tool.poetry.dependencies]
+python = "^3.11"
+torch = "^2.0.0"
+transformers = "^4.27.2"
+
+
+[tool.poetry.group.dev.dependencies]
+black = "^23.1.0"
+mypy = "^1.1.1"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
